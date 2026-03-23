@@ -1,0 +1,29 @@
+{
+  "Side Bar Chart setOptions": {
+    "prefix": "ch_sidebar",
+    "body": [
+      "${1:chartSideBarRef}.value.setOptions(",
+      "  multipleSideBarOptions(",
+      "    ${2:data}.map(item => ({ name: item.name, data: item.data })),",
+      "    {",
+      "      left: 10,",
+      "      right: 10,",
+      "      top: 20,",
+      "      bottom: 20,",
+      "      rightLeft: 25,",
+      "      leftRight: 25,",
+      "      middleCenter: 50,",
+      "      titleColor: '#333',",
+      "      leftValueColor: '#333',",
+      "      rightValueColor: '#333',",
+      "      barWidth: 12,",
+      "      borderRadius: 4,",
+      "      unit: '人',",
+      "      area: [['#2E74FF', '#7FB1FF'], ['#39D09B', '#92E7C8']],",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "侧边柱图 setOptions"
+  }
+}

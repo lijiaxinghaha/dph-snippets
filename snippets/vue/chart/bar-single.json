@@ -1,0 +1,26 @@
+{
+  "Single Bar Chart setOptions": {
+    "prefix": "ch_bar",
+    "body": [
+      "${1:chartBarRef}.value.setOptions(",
+      "  singleBarOption(",
+      "    ${2:data}.map(item => [item.dateStr, item.value]),",
+      "    {",
+      "      top: 32,",
+      "      bottom: 40,",
+      "      left: 10,",
+      "      right: 20,",
+      "      visibleCount: 8,",
+      "      showDataZoom: ${2:data}.length > 8 ? true : false,",
+      "      yMinInterval: 1,",
+      "      smooth: false,",
+      "      lineColor: '#2855B3',",
+      "      showBackground: false,",
+      "      showRotate: false,",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "单柱图 setOptions"
+  }
+}

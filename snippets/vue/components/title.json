@@ -1,0 +1,26 @@
+{
+  "Basic Title": {
+    "prefix": ["title", "dph_title"],
+    "body": ["<BasicTitle title=\"${1:基本信息}\" />"],
+    "description": "BasicTitle 基础用法"
+  },
+  "Basic Title Color": {
+    "prefix": ["title_color", "dph_title_color"],
+    "body": ["<BasicTitle title=\"${1:统计概览}\" barColor=\"#2E74FF\" textColor=\"#DDDDDD\" />"],
+    "description": "BasicTitle 自定义颜色"
+  },
+  "Basic Title Slot": {
+    "prefix": ["title_slot", "dph_title_slot"],
+    "body": ["<BasicTitle>", "  <span>${1:自定义标题}</span>", "</BasicTitle>"],
+    "description": "BasicTitle 插槽自定义"
+  },
+  "Basic Title Complete": {
+    "prefix": ["title_complete", "dph_title_complete"],
+    "body": [
+      "<BasicTitle title=\"${1:统计概览}\" barColor=\"#2E74FF\" textColor=\"#DDDDDD\">",
+      "  <span>${1:自定义标题}</span>",
+      "</BasicTitle>"
+    ],
+    "description": "BasicTitle 完整用法"
+  }
+}

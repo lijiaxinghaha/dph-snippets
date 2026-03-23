@@ -1,0 +1,19 @@
+{
+  "Progress Pie Chart setOptions": {
+    "prefix": "ch_pie_progress",
+    "body": [
+      "${1:chartProgressPieRef}.value.setOptions(",
+      "  progressPieOption(",
+      "    [${2:complete}, ${3:incomplete}],",
+      "    {",
+      "      emptyColor: '#F0F2F5',",
+      "      startColor: '#3B69D6',",
+      "      endColor: '#7FA6F8',",
+      "      textColor: '#333',",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "进度饼图 setOptions (complete, incomplete)"
+  }
+}

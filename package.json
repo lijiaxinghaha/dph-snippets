@@ -1,0 +1,136 @@
+{
+  "name": "dph-snippets",
+  "displayName": "DPH Snippets",
+  "description": "Vue 3, TypeScript, JSON code snippets for DPH projects",
+  "version": "0.0.1",
+  "publisher": "xjl",
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/card.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/title.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/descriptions.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/statistic-card.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/count-card.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/ranking-list.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components/group-button.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/line-single.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/line-single.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/line-double.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/line-double.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-single.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-single.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-progress.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-progress.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-multiple.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-multiple.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-multiple-color.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-multiple-color.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-single-extend.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/bar-single-extend.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/pie-multiple.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/pie-multiple.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/pie-progress.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/pie-progress.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/sidebar-multiple.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/chart/sidebar-multiple.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/ts/api.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
+}

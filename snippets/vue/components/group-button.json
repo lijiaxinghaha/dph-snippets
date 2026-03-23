@@ -1,0 +1,14 @@
+{
+  "Group Button": {
+    "prefix": ["gb", "dph_gb"],
+    "body": [
+      "<GroupButton",
+      "  :items=\"${1:items}\"",
+      "  :active=\"${2:1}\"",
+      "  :border=\"true\"",
+      "  color-name=\"#2855b3\"",
+      "/>"
+    ],
+    "description": "GroupButton 分组按钮"
+  }
+}

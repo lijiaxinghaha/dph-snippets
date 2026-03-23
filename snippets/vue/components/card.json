@@ -1,0 +1,42 @@
+{
+  "Base Card": {
+    "prefix": ["ca", "dph_ca"],
+    "body": [
+      "<BasicCard title=\"卡片标题\">",
+      "    <template #content>",
+      "      内容区域",
+      "    </template>",
+      "  </BasicCard>"
+    ],
+    "description": "基础卡片"
+  },
+  "Header Footer Card": {
+    "prefix": ["ca_hf", "dph_ca_hf"],
+    "body": [
+      "<BasicCard bgColor=\"linear-gradient(90deg, #FFFFFF 0%, #F7FAFF 100%)\">",
+      "    <template #header>",
+      "      <div class=\"flex items-center justify-between w-full\">",
+      "        <BasicTitle title=\"标题\" />",
+      "        <div><el-button type=\"primary\" size=\"small\">操作</el-button></div>",
+      "      </div>",
+      "    </template>",
+      "    <template #content>",
+      "      主体内容",
+      "    </template>",
+      "    <template #bottom>",
+      "      <a style=\"color:#2E74FF;\">更多</a>",
+      "    </template>",
+      "  </BasicCard>"
+    ],
+    "description": "头部和底部扩展的卡片"
+  },
+  "Background Card": {
+    "prefix": ["card_bg", "dph_card_bg"],
+    "body": [
+      "<BasicCard title=\"渐变背景\" bgColor=\"linear-gradient(90deg, #FFFFFF 0%, #F7FAFF 100%)\">",
+      "  渐变背景内容",
+      "</BasicCard>"
+    ],
+    "description": "背景卡片"
+  }
+}

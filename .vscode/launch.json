@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Snippets Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": ["--disable-extension", "eamodio.gitlens-extension", "--extensionDevelopmentPath=${workspaceFolder}"],
+      "timeout": 60000
+    }
+  ]
+}

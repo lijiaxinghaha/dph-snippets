@@ -1,0 +1,28 @@
+{
+  "Single Line Chart setOptions": {
+    "prefix": "ch_line",
+    "body": [
+      "${1:chartLineRef}.value.setOptions(",
+      "  singleLineOption(",
+      "    ${2:data}.map(item => [item.dateStr, item.value]),",
+      "    {",
+      "      top: 32,",
+      "      bottom: 40,",
+      "      visibleCount: 8,",
+      "      showDataZoom: ${2:data}.length > 8 ? true : false,",
+      "      yMinInterval: 1,",
+      "      smooth: true,",
+      "      area: ['#1CB19A', '#FFFFFF'],",
+      "      lineColor: '#1CB19A',",
+      "      symbolSize: 8,",
+      "      showSymbol: true,",
+      "      showItemStyle: true,",
+      "      symbol: 'circle',",
+      "      labelRotate: 0,",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "单条折线图 setOptions"
+  }
+}

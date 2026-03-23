@@ -1,0 +1,26 @@
+{
+  "Multiple Color Bar Chart setOptions": {
+    "prefix": "ch_bar_multi_color",
+    "body": [
+      "${1:chartMultiColorBarRef}.value.setOptions(",
+      "  multipleColorBarOptions(",
+      "    ${2:data}.map(item => ({ name: item.name, data: item.data })),",
+      "    {",
+      "      top: 32,",
+      "      bottom: 40,",
+      "      left: 10,",
+      "      right: 20,",
+      "      visibleCount: 5,",
+      "      showDataZoom: true,",
+      "      barWidth: 18,",
+      "      barGap: '20%',",
+      "      labelRotate: 45,",
+      "      autoRotateThreshold: 5,",
+      "      colors: [['#2E74FF', '#7FB1FF'], ['#39D09B', '#92E7C8']],",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "多色柱图 setOptions"
+  }
+}

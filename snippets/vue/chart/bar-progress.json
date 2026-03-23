@@ -1,0 +1,28 @@
+{
+  "Progress Bar Chart setOptions": {
+    "prefix": "ch_bar_progress",
+    "body": [
+      "${1:chartProgressBarRef}.value.setOptions(",
+      "  progressBarOption(",
+      "    ${2:data},",
+      "    {",
+      "      top: 20,",
+      "      bottom: 20,",
+      "      left: 0,",
+      "      right: 50,",
+      "      startColor: '#3B69D6',",
+      "      endColor: '#7FA6F8',",
+      "      emptyColor: '#F0F2F5',",
+      "      barWidth: 10,",
+      "      visibleCount: 6,",
+      "      showDataZoom: true,",
+      "      seriesNames: ['系列1'],",
+      "      showPercentage: false,",
+      "      unit: '',",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "进度柱图 setOptions (data: [label, val1, val2?][])"
+  }
+}

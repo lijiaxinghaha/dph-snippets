@@ -1,0 +1,42 @@
+{
+  "Count Card": {
+    "prefix": ["cc", "dph_cc"],
+    "body": [
+      "<CountCard",
+      "  title=\"${1:累计添加好友数量}\"",
+      "  :value=\"${2:123123}\"",
+      "  unit=\"${3:人}\"",
+      "  bg-color=\"#668AD6\"",
+      "/>"
+    ],
+    "description": "CountCard 基础"
+  },
+  "Count Card Tip": {
+    "prefix": ["cc_tip", "dph_cc_tip"],
+    "body": [
+      "<CountCard",
+      "  title=\"${1:累计添加好友数量}\"",
+      "  tip=\"${2:提示信息}\"",
+      "  :value=\"${3:80}\"",
+      "  unit=\"%\"",
+      "  :decimal-places=\"2\"",
+      "  bg-color=\"#668AD6\"",
+      "/>"
+    ],
+    "description": "CountCard 带提示"
+  },
+  "Count Card Link": {
+    "prefix": ["cc_link", "dph_cc_link"],
+    "body": [
+      "<CountCard",
+      "  title=\"${1:累计添加好友数量}\"",
+      "  :value=\"${2:80}\"",
+      "  unit=\"%\"",
+      "  :decimal-places=\"2\"",
+      "  :is-link=\"true\"",
+      "  bg-color=\"#668AD6\"",
+      "/>"
+    ],
+    "description": "CountCard 可点击"
+  }
+}

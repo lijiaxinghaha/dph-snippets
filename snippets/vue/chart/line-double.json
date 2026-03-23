@@ -1,0 +1,23 @@
+{
+  "Double Line Chart setOptions": {
+    "prefix": "ch_line_double",
+    "body": [
+      "${1:chartDoubleLineRef}.value.setOptions(",
+      "  doubleLineOption(",
+      "    ${2:data}.map(item => ({ name: item.name, data: item.data })),",
+      "    {",
+      "      left: 10,",
+      "      right: 20,",
+      "      bottom: 20,",
+      "      symbolSize: 6,",
+      "      showSymbol: true,",
+      "      showDataZoom: ${2:data}[0]?.data?.length > 8 ? true : false,",
+      "      visibleCount: 8,",
+      "      yMinInterval: 0,",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "双折线图 setOptions"
+  }
+}

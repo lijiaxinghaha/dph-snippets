@@ -1,0 +1,63 @@
+{
+  "Statistic Card": {
+    "prefix": ["sc", "dph_sc"],
+    "body": [
+      "<StatisticCard",
+      "  :card-data=\"{ title: '${1:签约居民}', value: ${2:1613}, unit: '${3:人}' }\"",
+      "  bg-color=\"${4:linear-gradient(310deg, #E8F2FF 0%, #FFFFFF 50%)}\"",
+      "  text-color=\"#2E74FF\"",
+      "  card-height=\"130px\"",
+      "/>"
+    ],
+    "description": "StatisticCard 标准"
+  },
+  "Statistic Card Icon": {
+    "prefix": ["sc_icon", "dph_sc_icon"],
+    "body": [
+      "<StatisticCard",
+      "  :card-data=\"{ title: '${1:签约居民}', value: ${2:1613}, unit: '' }\"",
+      "  bg-color=\"linear-gradient(310deg, #E8F2FF 0%, #FFFFFF 50%)\"",
+      "  card-height=\"130px\"",
+      ">",
+      "  <template #iconTrans>",
+      "    <img :src=\"${3:icon}\" style=\"width: 83px; height: 83px\" />",
+      "  </template>",
+      "</StatisticCard>"
+    ],
+    "description": "StatisticCard 左右布局带图标"
+  },
+  "Statistic Card Small": {
+    "prefix": ["sc_small", "dph_sc_small"],
+    "body": [
+      "<StatisticCard",
+      "  :show-small-icon=\"true\"",
+      "  :card-data=\"{ title: '${1:回复率}', value: ${2:65.89}, unit: '%' }\"",
+      "  bg-color=\"#F2F5FC\"",
+      "  text-color=\"#2855B3\"",
+      "  card-height=\"76px\"",
+      "  size=\"small\"",
+      ">",
+      "  <template #iconTrans=\"{ showSmallIcon }\">",
+      "    <img v-if=\"showSmallIcon\" :src=\"${3:replyIcon}\" style=\"width: 36px; height: 36px;\" />",
+      "  </template>",
+      "</StatisticCard>"
+    ],
+    "description": "StatisticCard 小尺寸"
+  },
+  "Statistic Card Card Data": {
+    "prefix": ["sc_card_data", "dph_sc_card_data"],
+    "body": [
+      "cardData: {",
+      "      title: '签约居民',",
+      "      value: 1613,",
+      "      unit: '人',",
+      "      tipExt: {",
+      "        label: '昨日新增',",
+      "        value: 20000,",
+      "        valueColor: '#F5525F',",
+      "        tipBg,",
+      "      },"
+    ],
+    "description": "StatisticCard 卡片数据"
+  }
+}

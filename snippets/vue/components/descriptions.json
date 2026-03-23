@@ -1,0 +1,34 @@
+{
+  "Basic Descriptions List": {
+    "prefix": ["des", "dph_des"],
+    "body": [
+      "<BasicDescriptions title=\"${1:基本信息}\" :show-title=\"true\" :list=\"${2:[{ key: 'name', label: '姓名', value: '张三' }, { key: 'age', label: '年龄', value: '28' }]}\" />"
+    ],
+    "description": "BasicDescriptions list 数组"
+  },
+  "Basic Descriptions Item": {
+    "prefix": ["des_item", "dph_des_item"],
+    "body": [
+      "<BasicDescriptions title=\"${1:基本信息}\">",
+      "  <BasicDescriptionsItem label=\"姓名\" value=\"张三\" />",
+      "  <BasicDescriptionsItem label=\"年龄\" value=\"28\" />",
+      "  <BasicDescriptionsItem label=\"头像\">",
+      "    ${2:<!-- 自定义内容 -->}",
+      "  </BasicDescriptionsItem>",
+      "  <BasicDescriptionsItem label=\"简介\" :span=\"2\" value=\"从业十余年，经验丰富\" />",
+      "</BasicDescriptions>"
+    ],
+    "description": "BasicDescriptions Item 写法"
+  },
+  "Basic Descriptions Slot": {
+    "prefix": ["des_slot", "dph_des_slot"],
+    "body": [
+      "<BasicDescriptions :list=\"[{ key: '${1:avatar}', label: '头像', value: '' }]\">",
+      "  <template #${1:avatar}>",
+      "    ${2:<!-- 插槽内容 -->}",
+      "  </template>",
+      "</BasicDescriptions>"
+    ],
+    "description": "BasicDescriptions 插槽"
+  }
+}

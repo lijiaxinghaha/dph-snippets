@@ -1,0 +1,29 @@
+{
+  "Single Extend Bar Chart setOptions": {
+    "prefix": "ch_bar_extend",
+    "body": [
+      "${1:chartExtendBarRef}.value.setOptions(",
+      "  singleExtendBarOption(",
+      "    ${2:data}.map(item => [item.label, item.value]),",
+      "    {",
+      "      top: 40,",
+      "      bottom: 20,",
+      "      left: 10,",
+      "      right: 20,",
+      "      visibleCount: 8,",
+      "      showDataZoom: ${2:data}.length > 8 ? true : false,",
+      "      area: ['#5B8FF9', '#1E3A8A'],",
+      "      backgroundColor: '#EBF4F7',",
+      "      showInsidePercentLabel: true,",
+      "      showTopValueLabel: true,",
+      "      percentValues: ${2:data}.map(() => 0),",
+      "      barWidth: 20,",
+      "      legendName: '图例',",
+      "      legendColor: '#2855B3',",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "扩展柱图 setOptions (带百分比/背景)"
+  }
+}

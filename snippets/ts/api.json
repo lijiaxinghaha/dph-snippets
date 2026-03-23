@@ -1,0 +1,45 @@
+{
+  "List API": {
+    "prefix": "api_list",
+    "body": [
+      "export function getList(current, size, params) {",
+      "  return request({",
+      "    url: '/getList',",
+      "    method: 'get',",
+      "    params: {",
+      "      current,",
+      "      size,",
+      "      ...params,",
+      "    },",
+      "  });",
+      "}"
+    ],
+    "description": "查询列表"
+  },
+  "Info API": {
+    "prefix": "",
+    "body": [
+      "export function getInfo(query) {",
+      "  return request({",
+      "    url: '/info',",
+      "    method: 'get',",
+      "    params: query,",
+      "  });",
+      "}"
+    ],
+    "description": "查询详情"
+  },
+  "Common Action": {
+    "prefix": "api_common_action",
+    "body": [
+      "export function commonAction(data) {",
+      "  return request({",
+      "    url: '/do',",
+      "    method: 'post',",
+      "    data: data,",
+      "  });",
+      "}"
+    ],
+    "description": "通用操作"
+  }
+}

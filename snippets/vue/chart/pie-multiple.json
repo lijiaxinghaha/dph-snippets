@@ -1,0 +1,24 @@
+{
+  "Multiple Pie Chart setOptions": {
+    "prefix": "ch_pie",
+    "body": [
+      "${1:chartPieRef}.value.setOptions(",
+      "  multiplePieOption(",
+      "    ${2:data}.map(item => ({ name: item.name, value: item.value })),",
+      "    {",
+      "      colors: ['#2E74FF', '#39D09B', '#F5A623', '#E53935'],",
+      "      radius: ['40%', '70%'],",
+      "      centerLabel: '总计',",
+      "      centerValue: '12321',",
+      "      showLegend: true,",
+      "      legendRight: 20,",
+      "      legendTop: 'center',",
+      "      unit: '人',",
+      "      seriesLabelShow: false,",
+      "    }",
+      "  )",
+      ")"
+    ],
+    "description": "多饼图 setOptions"
+  }
+}

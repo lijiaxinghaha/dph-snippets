@@ -1,0 +1,33 @@
+{
+  "Ranking List": {
+    "prefix": ["rl", "dph_rl"],
+    "body": ["<RankingList", "  :columns=\"${1:columns}\"", "  :data=\"${2:data}\"", "/>"],
+    "description": "RankingList 基础"
+  },
+  "Ranking List Scroll": {
+    "prefix": ["rl_scroll", "dph_rl_scroll"],
+    "body": [
+      "<div style=\"height: 200px; width: 100%;\">",
+      "  <RankingList",
+      "    :columns=\"${1:columns}\"",
+      "    :data=\"${2:data}\"",
+      "    :auto-scroll=\"true\"",
+      "    :scroll-threshold=\"5\"",
+      "    :scroll-speed=\"0.5\"",
+      "  />",
+      "</div>"
+    ],
+    "description": "RankingList 自动滚动"
+  },
+  "Ranking List Columns": {
+    "prefix": ["rl_columns", "dph_rl_columns"],
+    "body": [
+      "columns: [",
+      "      { label: '排名', prop: 'rank', type: 'rank', width: '60px', align: 'center' },",
+      "      { label: '机构名称', prop: 'name', align: 'center' },",
+      "      { label: '添加人数(人)', prop: 'value', isValue: true, width: '160px', align: 'center' },",
+      "    ],"
+    ],
+    "description": "RankingList 列配置"
+  }
+}
