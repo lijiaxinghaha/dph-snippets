@@ -1,9 +1,14 @@
 {
   "name": "dph-snippets",
   "displayName": "DPH Snippets",
+  "license": "MIT",
   "description": "Vue 3, TypeScript, JSON code snippets for DPH projects",
   "version": "0.0.1",
   "publisher": "xjl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lijiaxinghaha/dph-snippets.git"
+  },
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish"
